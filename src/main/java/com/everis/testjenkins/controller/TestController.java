@@ -20,4 +20,11 @@ public class TestController {
 	public MessageResponseDTO sayHello(@RequestParam(name = "name", required = true) String name) {
 		return this.messageService.sayHello(name);
 	}
+	
+	@GetMapping
+	public MessageResponseDTO sayHi() {
+		MessageResponseDTO result = new MessageResponseDTO();
+		result.setMessage("Hi!!!!");
+		return result;
+	}
 }
