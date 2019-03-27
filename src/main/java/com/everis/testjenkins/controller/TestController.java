@@ -24,7 +24,7 @@ public class TestController {
 	@GetMapping
 	public MessageResponseDTO sayHi() {
 		MessageResponseDTO result = new MessageResponseDTO();
-		result.setMessage("Hi!!!!");
+		result.setMessage("Hi there!!!!");
 		return result;
 	}
 }
